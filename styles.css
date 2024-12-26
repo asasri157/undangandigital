@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.invitation-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+  height: auto;
+}
+
+.photo-container {
+  border: 2px solid #f0c674;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.couple-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.invitation-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f0c674;
+}
+
+.couple-names {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  font-style: italic;
+  color: #f0c674;
+  margin: 10px 0;
+}
+
+.invitation-text {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #d4d4d4;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.details-list li {
+  margin: 5px 0;
+  color: #c5c5c5;
+}
+
+.rsvp-button {
+  background-color: #f0c674;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #e5b860;
+}
+
+#rsvp-message {
+  margin-top: 15px;
+  color: #00ff00;
+  font-weight: bold;
+}
+/* Media Queries untuk tablet landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+  body {
+    align-items: flex-start; /* Pastikan konten mulai dari atas */
+    height: auto; /* Izinkan body menyesuaikan tinggi */
+    padding: 20px;
+  }
+
+  .invitation-container {
+    max-height: 80vh; /* Batas tinggi maksimal kontainer */
+    overflow-y: auto; /* Aktifkan scroll dalam kontainer */
+  }
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+  body {
+    display: block; /* Ensure stacking on small devices */
+    overflow-y: auto; /* Enable vertical scroll */
+    min-height: auto; /* Remove fixed height */
+    padding: 10px;
+  }
+
+  .invitation-container {
+    max-width: 95%; /* Slightly smaller for small devices */
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .photo-container {
+    margin-bottom: 10px;
+  }
+
+  .couple-photo {
+    width: 100%; /* Ensure image scales well on small devices */
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .invitation-title {
+    font-size: 20px; /* Adjust font size for small devices */
+  }
+
+  .couple-names {
+    font-size: 22px;
+  }
+
+  .invitation-text {
+    font-size: 14px;
+  }
+
+  .details-list li {
+    font-size: 14px;
+  }
+
+  .rsvp-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
